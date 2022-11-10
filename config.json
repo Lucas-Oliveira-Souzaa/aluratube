@@ -2,7 +2,7 @@
     "name": "Lucas Oliveira Souza",
     "job": "Aprendendo Programação React-JS",
     "github": "Lucas-Oliveira-Souzaa",
-       "playlists": {
+    "playlists": {
         "Musicas selecionadas": [
             {
                 "title": "PARANGOLÉ AO VIVO COMPO BRITO 2010",
@@ -128,9 +128,6 @@
                 "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
                 "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
-        
-      
-
         ]
     }
 }

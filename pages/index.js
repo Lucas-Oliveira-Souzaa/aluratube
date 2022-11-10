@@ -26,7 +26,8 @@ function HomePage() {
                 <Menu />
                 <Header />
                 <Timeline playlists={config.playlists} />
-                
+                <Favoritos />
+
 
             </div>
         </>
@@ -74,6 +75,40 @@ function Header() {
     )
 }
 
+const StyledFavoritos = styled.div`
+        width: 100%;
+        padding: 26px;        
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;                    
+    }
+    h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    a {
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-transform: capitalize;   
+  }  
+`;
+function Favoritos() {
+    return (
+        <StyledFavoritos>
+            <h2>Canais Favoritos</h2>
+            <section className="user-info">
+                <img src={`https://github.com/${config.github}.png`} />
+                <div>
+                  <a href="https://github.com/Lucas-Oliveira-Souzaa">Lucas Oliveira</a>
+                </div>
+            </section>
+
+        </StyledFavoritos >
+    )
+}
+
+
 function Timeline(propriedades) {
 
     const playlistNames = Object.keys(propriedades.playlists);
@@ -103,10 +138,13 @@ function Timeline(propriedades) {
                 )
             })}
         </StyledTimeline>
+
+
     )
 }
 
 
 
 
-    
+
+
