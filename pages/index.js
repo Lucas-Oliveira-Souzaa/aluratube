@@ -4,9 +4,13 @@ import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 
+
+
+
+
 function HomePage() {
 
-    const estilosDaHomePage = { 
+    const estilosDaHomePage = {
         //backgroundColor: "red" 
     };
 
@@ -22,7 +26,8 @@ function HomePage() {
                 <Menu />
                 <Header />
                 <Timeline playlists={config.playlists} />
-               
+                
+
             </div>
         </>
     );
@@ -46,12 +51,12 @@ const StyledHeader = styled.div`
         padding: 16px;
 
     }
+
 `;
 
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner" /> */}
 
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
@@ -100,3 +105,8 @@ function Timeline(propriedades) {
         </StyledTimeline>
     )
 }
+
+
+
+
+    
