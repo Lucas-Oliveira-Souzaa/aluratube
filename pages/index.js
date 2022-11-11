@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { StyledFavoritos } from "../src/components/Favoritos";
 
 
 
@@ -74,41 +75,6 @@ function Header() {
         </StyledHeader >
     )
 }
-
-const StyledFavoritos = styled.div`
-        width: 100%;
-        padding: 26px;        
-    img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;                    
-    }
-    h2{
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
-    a {
-    font-size: 16px;
-    margin-bottom: 16px;
-    text-transform: capitalize;   
-  }  
-`;
-function Favoritos() {
-    return (
-        <StyledFavoritos>
-            <h2>Canais Favoritos</h2>
-            <section className="user-info">
-                <img src={`https://github.com/${config.github}.png`} />
-                <div>
-                  <a href="https://github.com/Lucas-Oliveira-Souzaa">Lucas Oliveira</a>
-                </div>
-            </section>
-
-        </StyledFavoritos >
-    )
-}
-
-
 function Timeline(propriedades) {
 
     const playlistNames = Object.keys(propriedades.playlists);
@@ -140,6 +106,25 @@ function Timeline(propriedades) {
         </StyledTimeline>
 
 
+    )
+}
+function Favoritos() {
+    return (
+        <StyledFavoritos>
+            <h2>Paginas Favoritas</h2>
+            <section className="user-info">
+                <img src={`https://github.com/${config.github}.png`} />
+                <div className="nameInfo">
+                  <a href="https://github.com/Lucas-Oliveira-Souzaa">Lucas Oliveira</a>
+                </div>
+                <img src={`https://github.com/AlexandreSoaresAlmeida.png`} />
+                <div className="nameInfo">
+                  <a href="https://github.com/AlexandreSoaresAlmeida">Alexandre Soares</a>
+                </div>
+            </section>
+           
+
+        </StyledFavoritos >
     )
 }
 
