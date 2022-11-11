@@ -7,14 +7,12 @@ export const StyledFavoritos = styled.div`
         justify-content: center;
         margin-bottom: 50px;
        
-    }
-              
+    }            
     img {
         width: 80px;
         height: 80px;
         border-radius: 50%; 
-        margin-left: 30px;
-                         
+        margin-left: 30px;                         
     }
     h2{
         font-size: 16px;
@@ -24,14 +22,10 @@ export const StyledFavoritos = styled.div`
     a {
     font-size: 16px;
     margin-bottom: 16px;
-    text-transform: capitalize; 
-    
-    
+    text-transform: capitalize;         
   }  
   .nameInfo{
     display: flex;
-    align-items: center ;
-    
-   
+    align-items: center ;       
   }
 `;
